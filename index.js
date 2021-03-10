@@ -2,7 +2,7 @@ module.exports = {
   extends: [
     './react.js',
     './typescript.js',
-    './prettier.js',
+    './bestpractice.js',
     './import.js',
   ],
 };
