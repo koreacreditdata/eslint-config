@@ -27,5 +27,14 @@ module.exports = {
     'import/order': ['error', { 'newlines-between': 'always' }],
     'import/newline-after-import': 'error',
     'import/no-duplicates': 'error',
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+    ],
   },
 };
