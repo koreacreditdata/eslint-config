@@ -2,10 +2,12 @@ module.exports = {
   parserOptions: {
     sourceType: 'module',
   },
-  plugins: [
-    'simple-import-sort',
-    'import',
-  ],
+  plugins: ['simple-import-sort', 'import'],
+  settings: {
+    'import/resolver': {
+      typescript: {},
+    },
+  },
   rules: {
     'simple-import-sort/imports': [
       'error',
@@ -15,8 +17,12 @@ module.exports = {
           ['^\\u0000'],
           // Packages. 'react' related packages come first.
           ['^react', '^\\w', '^@'],
+          // Aliases imports.
+          ['^~'],
           // Relative imports. Put same-folder imports first and parent imports last.
           ['^\\.', '^\\.\\.'],
+          // SVG icons
+          ['^.+\\.svg$'],
           // Style imports.
           ['^.+\\.css$'],
         ],
@@ -24,8 +30,20 @@ module.exports = {
     ],
     'simple-import-sort/exports': 'error',
     'import/first': 'error',
-    'import/order': ['error', { 'newlines-between': 'always' }],
     'import/newline-after-import': 'error',
     'import/no-duplicates': 'error',
+    'import/extensions': [
+      'error',
+      {
+        ignorePackages: true,
+        pattern: {
+          js: 'never',
+          jsx: 'never',
+          ts: 'never',
+          tsx: 'never',
+        },
+      },
+    ],
+    'import/order': 'off',
   },
 };
