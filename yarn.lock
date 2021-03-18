@@ -551,6 +551,11 @@ eslint-module-utils@^2.6.0:
     debug "^2.6.9"
     pkg-dir "^2.0.0"
 
+eslint-plugin-import-name@^1.2.3:
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-import-name/-/eslint-plugin-import-name-1.2.3.tgz#7b0105f37d170e8caf915ce2cab308339b39a319"
+  integrity sha512-Fwh+khN9JT78NT75b7AxJGHMYsmpSPJ4Sw3R3GXPWuv8HkYlNLQYIfF11Pv20dcWGrI2Dv4scFn2tlQ4WFQQGA==
+
 eslint-plugin-import@^2.22.1:
   version "2.22.1"
   resolved "https://registry.yarnpkg.com/eslint-plugin-import/-/eslint-plugin-import-2.22.1.tgz#0896c7e6a0cf44109a2d97b95903c2bb689d7702"
