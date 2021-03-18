@@ -10,6 +10,23 @@ module.exports = {
     },
   },
   rules: {
+    'no-restricted-imports': ['error', {
+      paths: [{
+        name: 'react',
+        importNames: [
+          'useState',
+          'useEffect',
+          'useContext',
+          'useReducer',
+          'useCallback',
+          'useMemo',
+          'useRef',
+          'useImperativeHandle',
+          'useLayoutEffect',
+          'useDebugValue',
+        ],
+      }],
+    }],
     'react/jsx-filename-extension': ['error', {
       extensions: ['.jsx', '.tsx'],
     }],
