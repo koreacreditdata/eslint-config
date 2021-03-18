@@ -2,7 +2,11 @@ module.exports = {
   parserOptions: {
     sourceType: 'module',
   },
-  plugins: ['simple-import-sort', 'import'],
+  plugins: [
+    'simple-import-sort',
+    'import',
+    'import-name',
+  ],
   settings: {
     'import/resolver': {
       typescript: {},
