@@ -14,6 +14,7 @@ module.exports = {
         'plugin:import/typescript',
       ],
       rules: {
+        '@typescript-eslint/consistent-type-imports': 'error',
         '@typescript-eslint/explicit-module-boundary-types': 'off',
         '@typescript-eslint/no-use-before-define': 'error',
         'no-use-before-define': 'off',
