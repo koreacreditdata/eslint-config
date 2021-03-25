@@ -20,7 +20,7 @@ module.exports = {
         // Type 만 사용하는 경우 import 문에 type을 명시적으로 붙여줍니다.
         '@typescript-eslint/consistent-type-imports': 'error',
 
-        //
+        // return type은 명시적으로 적지 않고 추론을 이용합니다.
         '@typescript-eslint/explicit-module-boundary-types': 'off',
       },
     },
