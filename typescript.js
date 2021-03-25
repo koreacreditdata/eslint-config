@@ -14,10 +14,14 @@ module.exports = {
         'plugin:import/typescript',
       ],
       rules: {
-        '@typescript-eslint/consistent-type-imports': 'error',
-        '@typescript-eslint/explicit-module-boundary-types': 'off',
-        '@typescript-eslint/no-use-before-define': 'error',
         'no-use-before-define': 'off',
+        '@typescript-eslint/no-use-before-define': 'error',
+
+        // Type 만 사용하는 경우 import 문에 type을 명시적으로 붙여줍니다.
+        '@typescript-eslint/consistent-type-imports': 'error',
+
+        //
+        '@typescript-eslint/explicit-module-boundary-types': 'off',
       },
     },
   ],
