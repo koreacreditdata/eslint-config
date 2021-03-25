@@ -58,7 +58,7 @@ module.exports = {
       },
     ],
 
-    // order group 지정이 간편한 simple-import-sort 플러그인을 사용합니다.
+    // import 플러그인으로도 ordering을 강제할 수 있지만, order group 지정이 더 간편한 simple-import-sort 플러그인을 대신 사용합니다.
     'import/order': 'off',
   },
 };
