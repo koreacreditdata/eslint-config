@@ -36,5 +36,8 @@ module.exports = {
     }],
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
+
+    // React.forwardRef에서 function expression을 사용하기 위해 예외를 허용합니다.
+    'prefer-arrow-callback': ['error', { allowNamedFunctions: true }],
   },
 };
