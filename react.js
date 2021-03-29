@@ -43,7 +43,7 @@ module.exports = {
       unnamedComponents: 'arrow-function',
     }],
 
-    // React.forwardRef에서 function expression을 사용하기 위해 예외를 허용합니다.
+    // 함수의 인자나 콜백으로 사용되는 컴포넌트를 named function으로 작성하기 위해 예외를 허용합니다. (e.g. React.forwardRef)
     'prefer-arrow-callback': ['error', { allowNamedFunctions: true }],
   },
 };
