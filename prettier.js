@@ -10,7 +10,6 @@ module.exports = {
     'prettier/prettier': ['warn', {
       singleQuote: true,
       trailingComma: 'all',
-      printWidth: 80,
     }],
   },
 };
