@@ -13,6 +13,14 @@ module.exports = {
     },
   },
   rules: {
+    // react, clsx 라이브러리를 import 할 때 이름을 React, cx로 제한합니다.
+    'import-name/all-imports-name': [
+      'error',
+      {
+        react: 'React',
+        clsx: 'cx',
+      },
+    ],
     // 유사한 항목을 그룹으로 묶어서 정렬합니다.
     'simple-import-sort/imports': [
       'error',
