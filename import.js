@@ -13,7 +13,7 @@ module.exports = {
     },
   },
   rules: {
-    // react, clsx 라이브러리를 import 할 때 이름을 React, cx로 제한합니다.
+    // import하는 패키지명을 그대로 camelCase화해서 쓰도록 강제해서 일관성을 높입니다. 단, react와 clsx는 자동 룰 대신 아래 룰을 따르게 합니다.
     'import-name/all-imports-name': [
       'error',
       {
@@ -21,6 +21,7 @@ module.exports = {
         clsx: 'cx',
       },
     ],
+
     // 유사한 항목을 그룹으로 묶어서 정렬합니다.
     'simple-import-sort/imports': [
       'error',
@@ -36,6 +37,8 @@ module.exports = {
           ['^\\.', '^\\.\\.'],
           // SVG icons
           ['^.+\\.svg$'],
+          // json files
+          ['^.+\\.json$'],
           // Style imports.
           ['^.+\\.css$'],
         ],
@@ -52,7 +55,7 @@ module.exports = {
     // 중복된 import를 허용하지 않습니다.
     'import/no-duplicates': 'error',
 
-    // ts, tsx 확장자를 추가합니다.
+    // import할 때 js/jsx/ts/tsx 파일은 extension을 붙이지 않고, json에는 항상 붙이게 합니다.
     'import/extensions': [
       'error',
       {
@@ -62,6 +65,7 @@ module.exports = {
           jsx: 'never',
           ts: 'never',
           tsx: 'never',
+          json: 'always',
         },
       },
     ],
