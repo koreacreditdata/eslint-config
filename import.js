@@ -72,5 +72,8 @@ module.exports = {
 
     // import 플러그인으로도 ordering을 강제할 수 있지만, order group 지정이 더 간편한 simple-import-sort 플러그인을 대신 사용합니다.
     'import/order': 'off',
+
+    // 한 파일에 하나의 export만 있더라도 여러 개로 늘어날 가능성을 고려하여 default export를 하지 않는 경우가 훨씬 많습니다.
+    'import/prefer-default-export': 'off',
   },
 };
