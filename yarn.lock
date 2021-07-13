@@ -628,7 +628,7 @@ eslint-plugin-simple-import-sort@^7.0.0:
 
 eslint-plugin-spellcheck@^0.0.19:
   version "0.0.19"
-  resolved "http://localhost:4873/eslint-plugin-spellcheck/-/eslint-plugin-spellcheck-0.0.19.tgz#73926b94208ae93ea5be00a8844dcdf1d8d2bf6f"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-spellcheck/-/eslint-plugin-spellcheck-0.0.19.tgz#73926b94208ae93ea5be00a8844dcdf1d8d2bf6f"
   integrity sha512-Vau+oCLT3IGx+inJV5rkuKlIwgka9L2is1SkztviIHN3apNnT2OrZoGy9Jt3gbcjjkfkIFMFSZjB+ijHCimbNA==
   dependencies:
     globals "^13.0.0"
