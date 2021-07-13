@@ -24,7 +24,7 @@ module.exports = {
       extensions: ['.jsx', '.tsx'],
     }],
 
-    // label 태그는 control 관련 태그를 감싸고 있어야 함
+    // label 태그는 control 관련 태그를 감싸고 있어야 함 (assert: 'both'를 'either'로 변경)
     'jsx-a11y/label-has-associated-control': [
       'error',
       {
