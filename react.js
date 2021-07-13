@@ -24,9 +24,6 @@ module.exports = {
       extensions: ['.jsx', '.tsx'],
     }],
 
-    // div에 키보드 이벤트 없이 onClick 자유롭게 넣을 수 있게 함
-    'jsx-a11y/click-events-have-key-events': 'off',
-
     // label 태그는 control 관련 태그를 감싸고 있어야 함
     'jsx-a11y/label-has-associated-control': [
       'error',
