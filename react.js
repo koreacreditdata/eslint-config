@@ -13,12 +13,6 @@ module.exports = {
     // 3항연산자 중첩 허용: 적절하게 쓰면 가독성을 해치지 않음
     'no-nested-ternary': 'off',
 
-    // 한글 컴포넌트 import를 위함
-    'react/jsx-pascal-case': 'off',
-
-    // 한글/영어 혼용된 컴포넌트/메서드명 사용을 위함
-    'camelcase': 'off',
-
     // typescript를 무조건 쓸 것을 가정하므로 defaultProps 정의할 필요 없음
     'react/require-default-props': 'off',
 
