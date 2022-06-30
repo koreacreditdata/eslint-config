@@ -1,6 +1,6 @@
 {
   "name": "@koreacreditdata/eslint-config",
-  "version": "0.3.4",
+  "version": "0.4.0-alpha",
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
